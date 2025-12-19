@@ -1,5 +1,3 @@
-
-
 <div align="center">
   <img src="images/python-badge.png" alt="Python 3.8+" width="400">
 
@@ -8,6 +6,8 @@
 > **An intelligent research assistant that searches the web, analyzes content using AI embeddings, and delivers relevant passages with concise summaries.**
 
 This project demonstrates a practical implementation of **Retrieval-Augmented Generation (RAG)** — the architecture powering modern AI systems like ChatGPT's web browsing capabilities. Built as a portfolio piece to showcase AI/ML engineering skills, this agent automates the time-consuming process of web research by intelligently retrieving and ranking information based on semantic similarity.
+
+</div>
 
 ---
 
@@ -23,6 +23,27 @@ The AI Research Agent takes your research question and:
 **Example Query:** *"What causes urban heat islands and how can cities reduce them?"*
 
 **Output:** Top 5 most relevant passages from different sources, plus a 3-sentence summary with source citations.
+
+---
+
+## 📹 See It In Action
+
+**Want to see real examples before running it?**
+
+Check out **[demo_output.md](demo_output.md)** for complete example sessions showing:
+
+🔍 **Two Research Queries:**
+1. "What are the benefits of renewable energy?"
+2. "How does artificial intelligence work?"
+
+📊 **What's Included:**
+- Real-time search across 6 authoritative sources
+- Top 5 passages ranked by AI similarity (scores 0.8+)
+- Extractive summaries with source citations
+- Performance metrics (15-18 seconds per query)
+- Multiple queries in one interactive session
+
+**Perfect for seeing** what the agent produces without setting it up first!
 
 ---
 
@@ -126,6 +147,9 @@ Summary ← Sentence Ranking ← Passage Ranking ← Embeddings
 ### For Technical Users
 💻 **[Technical Deep Dive](TECHNICAL.md)** - Architecture details, code walkthrough, and RAG implementation guide
 
+### Live Demo
+📹 **[Demo Output](demo_output.md)** - See real example queries and results
+
 ### Configuration
 The agent can be customized by modifying constants in `research_agent.py`:
 - `SEARCH_RESULTS = 6` - Number of URLs to analyze
@@ -151,10 +175,13 @@ The agent can be customized by modifying constants in `research_agent.py`:
 ```
 AI_Agent/
 ├── research_agent.py           # Main application code
+├── research_agent_enhanced.py  # Enhanced version with logging
 ├── requirements.txt            # Python dependencies
 ├── README.md                   # This file
 ├── SUMMARY.md                  # Non-technical overview
 ├── TECHNICAL.md                # Technical documentation
+├── QUICKSTART.md               # 5-minute setup guide
+├── demo_output.md              # Example output
 └── examples/                   # Sample outputs
     └── sample_research_output.txt
 ```
